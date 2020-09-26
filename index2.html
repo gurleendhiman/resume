@@ -1,13 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" style="width:100%; height:100%;">
+<html lang="en" style="width:100%; height:inherit;">
 <head>
 <style>
-
 div {
-  height: inherit;
+  height: auto;
   width: 100%;
   background-color: white;
+  border: 0.5px solid gray;
+  padding: 1px;
 }
+    
+h1 {
+margin: 0px;
+  padding: 0px;
+    text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+}
+
+p {
+    margin: 0px;
+  padding: 0px;
+  text-indent: justify;
+  text-align: center;
+  letter-spacing: 1px;
+}
+    
 .button {
   background-color: #4CAF50; /* Green */
   border: none;
@@ -41,15 +59,17 @@ div {
 .button2:hover {
   background-color: #f44336;
   color: white;
-
 </style>
 </head>
 <body>
-    Hi I'm Gurleen Dhiman To download or view the Resume or Cover Letter Please Click>>>.
-<body style="width:100%; height:100%; margin:0;">
+<div>
+  <h1>Hello. I'M Gurleen Dhiman</h1>
+  <p>Please click on below to view or download</p>
+<p>
 <button class="button button1">Resume</button>
 <button class="button button2">Cover Letter</button>
-    
+    </p>
+</div>
 </body>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
@@ -68,8 +88,4 @@ $(function(){
     );   
 })
 </script>
-<script>.mobile-pdf {
-display: block;
-}
-</script>
-<div id="iframeHolder"></div>
+<div id="iframeHolder" style="height:800px;scroll-behavior: smooth"></div>
