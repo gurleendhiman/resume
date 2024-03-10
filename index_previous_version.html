@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurleen's Resume</title>
+    <meta name="resume-gurleen" content="Gurleen Dhiman's Resume">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+	
+		.item1, .item2, .item3 {
+  position: fixed;
+  background-color: transparent;
+  left: calc(50% - (var(--size) / 2));
+  top: calc(50% - (var(--size) / 2));
+  height: var(--size);
+  width: var(--size);
+  border-radius: 100%;
+  }
+
+.loader .item1 {
+  --size: 390px;
+  animation: size1_1 2.5s infinite alternate;
+  z-index: 1;
+}
+
+.loader .item2 {
+  --size: 360px;
+  animation: size1_2 2.5s infinite alternate;
+  z-index: 2;
+}
+
+.loader .item3 {
+  --size: 330px;
+  animation: size1_3 2.5s infinite alternate;
+  z-index: 3;
+}
+
+
+@keyframes size1_1 {
+  0%,
+  10% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 8px 8px 14px #c5c5c5, -8px -8px 14px #ffffff;
+  }
+}
+
+@keyframes size1_2 {
+  0%,
+  40% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 8px 8px 14px #c5c5c5, -8px -8px 14px #ffffff;
+  }
+}
+
+@keyframes size1_3 {
+  0%,
+  70% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 8px 8px 14px #c5c5c5, -8px -8px 14px #ffffff;
+  }
+}
+
+		footer {
+			font-family: 'Raleway', sans-serif;
+			font-size: small;
+			text-align: center;
+			padding: 3px;
+			background-color: LightCoral;
+			color: white;
+			margin: 0 auto;
+            max-width: 850px;
+            padding: 1px;
+			font-size: clamp(.50rem, .75vw, 1vw);
+			
+			}
+        body {
+		
+            width: 100%;
+            height: inherit;
+            background-color: lightgrey;
+			
+        }
+
+        div {
+            background-color: #fff;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+            color: #545454;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0 auto;
+            max-width: 850px;
+            padding: 1px;
+					
+						
+	
+        }
+		
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            text-shadow: 0px 0px 0px grey;
+            font-weight: 250;
+            font-size: clamp(1.25rem, 1.85vw, 2.75vw);
+            margin: 0px;
+            padding: 0px;
+            letter-spacing: 1.5px;
+            text-align: center;
+            text-transform: none;
+            color: black;
+        }
+
+        p {
+            font-family: 'Raleway', sans-serif;
+            text-shadow: 0px 0px 0.5px black;
+            font-size: clamp(.75rem, 1.15vw, 1vw);
+            margin: 0px;
+            padding: 0px;
+            text-indent: justify;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 1px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-family: 'Raleway', sans-serif;
+            font-size: clamp(0.82rem, 2rem, 1.25vw);
+            margin: 2px 2px;
+            transition-duration: 0.2s;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: white;
+            color: #476BD5;
+            border: 1px solid #008CBA;
+        }
+
+        .button1:hover {
+            background-color: #008CBA;
+            color: white;
+        }
+
+        .button2 {
+            background-color: white;
+            color: #f44336;
+            border: 1px solid #f44336;
+        }
+
+        .button2:hover {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .button3 {
+            background-color: white;
+            color: #0e76a8;
+            border: 1px solid #0e76a8;
+        }
+
+        .button3:hover {
+            background-color: #0e76a8;
+            color: white;
+        }
+
+        .button4 {
+            background-color: white;
+            color: #00A4EF;
+            border: 1px solid #008CBA;
+        }
+
+        .button4:hover {
+            background-color: #008CBA;
+            color: white;
+        }
+		
+		
+    </style>
+	
+   <style>
+        body {
+            height: inherit; /* Adjust the height as needed */
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            // Wait for a 1-second delay before scrolling starts
+            setTimeout(function() {
+                // Scroll down smoothly and slowly
+                scrollSmoothly(document.body.scrollHeight, 500, 'easeInOutQuart'); // Adjust the duration (in milliseconds) as needed
+
+                // Wait for a specified duration before scrolling back up
+                setTimeout(function() {
+                    scrollSmoothly(0, 500, 'easeInOutQuart'); // Adjust the duration (in milliseconds) as needed
+                }, 250); // Adjust the delay (in milliseconds) as needed
+            }, 2200); // Adjust the delay (in milliseconds) as needed
+        };
+
+        function scrollSmoothly(to, duration, easing) {
+            const start = window.scrollY;
+            const startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+
+            const easeInOutQuart = function(t) {
+                return t < 0.5 ? 8 * t * t * t * t : 1 - Math.pow(-2 * t + 2, 4) / 2;
+            };
+
+            const animateScroll = function() {
+                const currentTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+                const timeElapsed = currentTime - startTime;
+                const animate = easeInOutQuart(Math.min(timeElapsed / duration, 1));
+
+                window.scrollTo(0, Math.floor(animate * (to - start) + start));
+
+                if (timeElapsed < duration) {
+                    requestAnimationFrame(animateScroll);
+                }
+            };
+
+            animateScroll();
+        }
+    </script>
+	
+	
+</head>
+<div class="loader">
+  <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+</div>
+<script>
+        // Once the DOM content is loaded, hide the loader
+        $(document).ready(function() {
+		$(".contentPost").delay(2500).fadeIn(500);
+		});
+    </script>
+<body>
+    <div>
+        <h1>Hello. I'm <a target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none" href='http://ca.linkedin.com/in/gurleendhiman?trk=profile-badge'>Gurleen Dhiman</a></h1>
+        <p>Experienced IT Leader with a strong understanding of IT infrastructure.<br> Certified in Azure, MCIPT, MCP & ITIL.</p>
+        <p>
+            <button class="button button1"><b>Resume</b></button>
+            <button class="button button2"><b>Cover Letter</b></button>
+            <button class="button button3" onclick="window.open('http://ca.linkedin.com/in/gurleendhiman?trk=profile-badge', '_blank')"><b>Linked <i class="fa fa-linkedin-square" style="color:#008CBA;"></i></b></button>
+            <button class="button button4" onclick="window.open('mailto:GurleenDhiman<gurleendhiman@gmail.com>');"><b><i class="fa fa-envelope"></i> Email</b></button>
+        </p>
+		
+    </div>
+
+    <div id="iframeHolder" style="height:100vh;"></div>
+    <script>setTimeout(function(),3000);</script>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('.button1').click(function(){ 
+                if (!$('#iframe.hasPDF').length) {
+                    $('#iframeHolder').html('<iframe src="https://drive.google.com/file/d/1MOUlB4S3d3DnY7Jwf2hR72wHIVkkvLTY/preview" style="width: 100%;height:100%;" frameborder="0"></iframe>');
+                }
+            });
+        });
+
+        $(function(){
+            $('.button2').click(function(){ 
+                if (!$('#iframe.hasPDF').length) {
+                    $('#iframeHolder').html('<iframe src="https://drive.google.com/file/d/1Y_EHAyNfvOkcV4KUg4FEE8PKg7RZzOqf/preview" style="width: 100%;height:100%;" frameborder="0"></iframe>');
+                }
+            });
+						
+        });
+		
+		
+
+		
+	
+		
+    </script>
+	
+	 <script>
+        // Simulating the content load
+        setTimeout(function () {
+            document.querySelector('.loader').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        }, 5000);
+    </script>
+	
+	
+	<footer>
+	<script type="application/javascript">
+	function getIP(json) {
+    document.write("This website collects and stores your IP address for security and analytical purposes.<br>Your public IP address is:", json.ip);
+						}
+		</script>
+			<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+	</footer>
+</body>
+</html>
